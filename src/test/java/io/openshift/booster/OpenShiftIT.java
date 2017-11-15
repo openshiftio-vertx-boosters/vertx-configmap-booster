@@ -25,11 +25,12 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class OpenShiftIT {
 
     private static OpenShiftTestAssistant assistant = new OpenShiftTestAssistant();
+    private static final String APPLICATION_NAME = System.getProperty("application.name","app-config");
 
     @BeforeClass
     public static void prepare() throws Exception {
         assistant.deployApplication();
-        assistant.deploy("app-config", new File("target/test-classes/test-config.yml"));
+        assistant.deploy(APPLICATION_NAME, new File("target/test-classes/test-config.yml"));
 
     }
     @AfterClass
