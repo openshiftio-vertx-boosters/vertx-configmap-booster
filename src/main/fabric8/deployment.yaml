@@ -9,7 +9,7 @@ spec:
             optional: true
             # Define the items from the config map to mount
             items:
-            - key: app-config.yml
+            - key: app-config
               path: app-config.yml
             # Volume name (used as reference below)
           name: config
