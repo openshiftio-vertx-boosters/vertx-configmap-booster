@@ -192,9 +192,9 @@
             <configuration>
               <enricher>
                 <config>
-                  <vertx-health-check>
+                  <f8-healthcheck-vertx>
                     <path>/health</path>
-                  </vertx-health-check>
+                  </f8-healthcheck-vertx>
                 </config>
               </enricher>
               <resources>
